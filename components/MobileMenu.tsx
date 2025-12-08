@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { X, Home, Info, ShoppingBag } from "lucide-react"
+import { X, Home, Info, ShoppingBag, Mail } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
 
@@ -28,6 +28,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     { href: "/", label: "Home", icon: Home },
     { href: "/#about", label: "About", icon: Info },
     { href: "/collection", label: "Collection", icon: ShoppingBag },
+    { href: "/#contact", label: "Contact Us", icon: Mail },
   ]
 
   return (
@@ -55,14 +56,14 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             {/* Header */}
             <div className="flex items-center bg-pink-300 justify-between p-6 border-b border-gray-100">
               <div className="flex items-center space-x-3">
-                <Image 
-                  src="/sa-removebg-preview.png" 
-                  alt="Salsel Logo" 
-                  width={40} 
-                  height={40} 
+                <Image
+                  src="/sa-removebg-preview.png"
+                  alt="Salsel Logo"
+                  width={40}
+                  height={40}
                   className="h-10 w-auto"
                 />
-            
+
               </div>
               <button
                 onClick={onClose}

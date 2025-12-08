@@ -139,6 +139,10 @@ export default function Home() {
                 COLLECTION
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
+              <a href="#contact" className="hover:text-pink-500 transition-colors duration-300 relative group">
+                CONTACT US
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+              </a>
 
             </div>
 
@@ -409,7 +413,7 @@ export default function Home() {
 
 
       {/* Contact Us Section */}
-      <section className="py-20 bg-gradient-to-br from-white via-white to-gray-300">
+      <section id="contact" className="py-20 bg-gradient-to-br from-white via-white to-gray-300">
         <div className="container mx-auto px-6">
           <motion.div
             ref={contactRef}
