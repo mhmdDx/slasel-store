@@ -4,11 +4,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { ShoppingBag, Menu, Filter, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useState, useEffect, Suspense, useRef } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useCart } from "@/contexts/cart-context"
 import MobileMenu from "@/components/MobileMenu"
 import { useSearchParams } from "next/navigation"
-import { motion, useInView } from "framer-motion"
 
 const products = [
     // Jewelry
@@ -208,10 +207,6 @@ function CollectionContent() {
     const [selectedCategory, setSelectedCategory] = useState("All")
     const { cartCount, addToCart } = useCart()
 
-    // Refs for scroll-triggered animations
-    const productsRef = useRef(null)
-    const productsInView = useInView(productsRef, { once: true, margin: "-50px" })
-
     // Set initial category from URL parameter
     useEffect(() => {
         const categoryParam = searchParams.get('category')
@@ -299,39 +294,21 @@ function CollectionContent() {
             {/* Hero Section */}
             <section className="pt-32 pb-16 bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100">
                 <div className="container mx-auto px-6">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                    <div
                         className="text-center max-w-3xl mx-auto"
                     >
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.2, duration: 0.5 }}
-                            className="flex items-center justify-center space-x-4 mb-6"
-                        >
+                        <div className="flex items-center justify-center space-x-4 mb-6">
                             <span className="h-[1px] w-12 bg-pink-500"></span>
                             <span className="text-pink-600 text-xs uppercase tracking-widest font-medium">Shop Our Favorites</span>
                             <span className="h-[1px] w-12 bg-pink-500"></span>
-                        </motion.div>
-                        <motion.h1
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3, duration: 0.6 }}
-                            className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight mb-6"
-                        >
+                        </div>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight mb-6">
                             Curated <span className="font-serif italic text-pink-600">Collections</span>
-                        </motion.h1>
-                        <motion.p
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4, duration: 0.5 }}
-                            className="text-gray-600 text-lg leading-relaxed"
-                        >
+                        </h1>
+                        <p className="text-gray-600 text-lg leading-relaxed">
                             Discover our handpicked selection of elegant jewelry and trendy hair accessories. Find the perfect pieces to express your unique style.
-                        </motion.p>
-                    </motion.div>
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -350,11 +327,7 @@ function CollectionContent() {
                             </button>
 
                             {isFilterOpen && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                                <div
                                     className="absolute left-0 md:left-auto md:right-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"
                                 >
                                     {categories.map((category) => (
@@ -372,7 +345,7 @@ function CollectionContent() {
                                             {category}
                                         </button>
                                     ))}
-                                </motion.div>
+                                </div>
                             )}
                         </div>
                     </div>
@@ -394,21 +367,14 @@ function CollectionContent() {
             </section>
 
             {/* Products Grid */}
-            <section className="py-16 bg-white" ref={productsRef}>
+            <section className="py-16 bg-white">
                 <div className="container mx-auto px-6">
                     <div
                         className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-12 md:gap-x-6 md:gap-y-16"
                     >
-                        {filteredProducts.map((product, index) => (
-                            <motion.div
+                        {filteredProducts.map((product) => (
+                            <div
                                 key={product.id}
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={productsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                                transition={{
-                                    delay: Math.min(index * 0.05, 0.4),
-                                    duration: 0.5,
-                                    ease: "easeOut"
-                                }}
                                 className="group flex flex-col h-full"
                             >
                                 <div className="bg-white rounded-lg overflow-hidden flex-grow flex flex-col">
@@ -444,7 +410,7 @@ function CollectionContent() {
                                         </div>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
 
