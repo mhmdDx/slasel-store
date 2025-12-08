@@ -165,19 +165,14 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="300">
                 <Link href="/collection">
-                  <Button className="btn-primary group w-full sm:w-auto">
+                  <Button className="btn-primary bg-gray-900 hover:bg-black text-white px-8 py-6 rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105 shadow-lg group w-full sm:w-auto text-sm tracking-widest uppercase font-medium ">
                     SHOP COLLECTION
                     <ShoppingBag className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </Link>
               </div>
               <div className="flex items-center space-x-4 sm:space-x-6 pt-2 sm:pt-4">
-                <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-pink-400 text-pink-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600">Loved by 50,000+ girls</p>
+
               </div>
             </div>
 
