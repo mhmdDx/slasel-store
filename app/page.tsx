@@ -142,8 +142,8 @@ export default function Home() {
               className="space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1"
             >
               <div className="space-y-3 sm:space-y-4 lg:space-y-6">
-                <p className="text-pink-600 text-xs sm:text-sm uppercase tracking-wider font-medium">Trendy Girls Accessories</p>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight">
+                <p className="text-pink-600 text-xs sm:text-sm uppercase tracking-wider font-medium" data-aos="fade-up">Trendy Girls Accessories</p>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight" data-aos="fade-up" data-aos-delay="100">
                   Express Your
                   <br />
                   <span className="text-pink-600 relative">
@@ -159,11 +159,11 @@ export default function Home() {
                   </span>
                 </h1>
               </div>
-              <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md">
+              <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md" data-aos="fade-up" data-aos-delay="200">
                 Discover our curated collection of stylish accessories - from elegant jewelry to trendy bags, clips, and
                 hair accessories for every occasion.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="300">
                 <Link href="/collection">
                   <Button className="btn-primary group w-full sm:w-auto">
                     SHOP COLLECTION
@@ -183,6 +183,8 @@ export default function Home() {
 
             <div
               className="relative order-1 lg:order-2"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             >
               <div className="relative group">
                 <div className="aspect-square overflow-hidden rounded-3xl shadow-primary-lg">
@@ -224,7 +226,7 @@ export default function Home() {
                   <span className="h-[1px] w-12 bg-black"></span>
                   <span className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500">Shop By Category</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-sans text-black leading-none">
+                <h2 className="text-4xl md:text-5xl font-sans text-black leading-none" data-aos="fade-right">
                   Curated <br />
                   <span className="font-serif italic font-light ml-12 text-pink-600">Essentials</span>
                 </h2>
@@ -240,7 +242,7 @@ export default function Home() {
                   { title: "Bags", desc: "Handbags", img: "/f1.jpg", link: "/collection?category=Bags" },
                   { title: "Hair", desc: "Accessories", img: "/f2.jpg", link: "/collection?category=Hair Accessories" },
                 ].map((item, i) => (
-                  <Link key={i} href={item.link} className="relative group cursor-pointer overflow-hidden aspect-[3/4]">
+                  <Link key={i} href={item.link} className="relative group cursor-pointer overflow-hidden aspect-[3/4]" data-aos="fade-up" data-aos-delay={i * 100}>
                     <Image
                       src={item.img}
                       alt={item.title}
@@ -288,7 +290,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-pink-600 text-xs uppercase tracking-widest font-medium">Top Picks</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic font-light text-black mt-3 mb-4">Featured Collection</h2>
+            <h2 className="text-3xl md:text-4xl font-serif italic font-light text-black mt-3 mb-4" data-aos="fade-up">Featured Collection</h2>
             <div className="w-12 h-0.5 bg-pink-100 mx-auto"></div>
           </div>
 
@@ -299,6 +301,8 @@ export default function Home() {
               <div
                 key={product.id}
                 className="group flex flex-col"
+                data-aos="fade-up"
+                data-aos-delay={product.id * 50}
               >
                 <div className="relative aspect-square overflow-hidden bg-gray-50 rounded-lg mb-4">
                   <Image
@@ -359,7 +363,7 @@ export default function Home() {
               <span className="text-pink-600 text-xs uppercase tracking-widest font-medium">Get In Touch</span>
               <span className="h-[1px] w-12 bg-pink-500"></span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-sans text-black leading-tight mb-4">
+            <h2 className="text-4xl md:text-5xl font-sans text-black leading-tight mb-4" data-aos="fade-up">
               Contact <span className="font-serif italic font-light text-gray-500">Us</span>
             </h2>
             <p className="text-gray-600 text-lg font-light max-w-2xl mx-auto">
@@ -369,7 +373,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 {/* WhatsApp Contact */}
-                <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300" data-aos="fade-right">
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -392,7 +396,7 @@ export default function Home() {
                 </div>
 
                 {/* Email Contact */}
-                <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300" data-aos="fade-left">
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

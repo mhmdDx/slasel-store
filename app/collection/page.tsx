@@ -376,6 +376,8 @@ function CollectionContent() {
                             <div
                                 key={product.id}
                                 className="group flex flex-col h-full"
+                                data-aos="fade-up"
+                                data-aos-delay={(Number(product.id) % 8) * 50}
                             >
                                 <div className="bg-white rounded-lg overflow-hidden flex-grow flex flex-col">
                                     {/* Product Image */}

@@ -130,6 +130,7 @@ export default function CartPage() {
                         // Empty Cart State
                         <div
                             className="text-center py-20"
+                            data-aos="fade-up"
                         >
                             <ShoppingBag className="w-24 h-24 mx-auto text-gray-300 mb-6" />
                             <h2 className="text-3xl font-light text-gray-800 mb-4">Your cart is empty</h2>
@@ -146,6 +147,7 @@ export default function CartPage() {
                             {/* Cart Items List */}
                             <div
                                 className="lg:col-span-2 space-y-4"
+                                data-aos="fade-up"
                             >
                                 {cartItems.map((item) => (
                                     <div
@@ -210,6 +212,8 @@ export default function CartPage() {
                             {/* Cart Summary */}
                             <div
                                 className="lg:col-span-1"
+                                data-aos="fade-left"
+                                data-aos-delay="200"
                             >
                                 <div className="bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 rounded-lg p-4 sticky top-24">
                                     <h2 className="text-xl font-serif italic text-gray-800 mb-4">Order Summary</h2>
