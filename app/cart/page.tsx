@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { motion } from "framer-motion"
 import { ShoppingBag, Menu, Trash2, Plus, Minus, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -27,30 +26,7 @@ const initialCartItems = [
     }
 ]
 
-const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: "spring",
-            stiffness: 70,
-            damping: 20,
-            mass: 1
-        } as const
-    }
-}
 
-const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.1,
-            delayChildren: 0.1
-        }
-    }
-}
 
 export default function CartPage() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -128,11 +104,8 @@ export default function CartPage() {
             <MobileMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
             <section className="pt-32 pb-16 bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100">
                 <div className="container mx-auto px-6">
-                    <motion.div
-                        initial="hidden"
-                        animate="visible"
-                        variants={fadeInUp}
-                        className="text-center max-w-3xl mx-auto will-change-transform"
+                    <div
+                        className="text-center max-w-3xl mx-auto"
                     >
                         <div className="flex items-center justify-center space-x-4 mb-6">
                             <span className="h-[1px] w-12 bg-pink-500"></span>
@@ -146,7 +119,7 @@ export default function CartPage() {
                             <ArrowLeft className="w-4 h-4 mr-2" />
                             Continue Shopping
                         </Link>
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
@@ -155,11 +128,8 @@ export default function CartPage() {
                 <div className="container mx-auto px-6">
                     {cartItems.length === 0 ? (
                         // Empty Cart State
-                        <motion.div
-                            initial="hidden"
-                            animate="visible"
-                            variants={fadeInUp}
-                            className="text-center py-20 will-change-transform"
+                        <div
+                            className="text-center py-20"
                         >
                             <ShoppingBag className="w-24 h-24 mx-auto text-gray-300 mb-6" />
                             <h2 className="text-3xl font-light text-gray-800 mb-4">Your cart is empty</h2>
@@ -169,22 +139,18 @@ export default function CartPage() {
                                     Shop Collection
                                 </Button>
                             </Link>
-                        </motion.div>
+                        </div>
                     ) : (
                         // Cart Items
                         <div className="grid lg:grid-cols-3 gap-8">
                             {/* Cart Items List */}
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                variants={staggerContainer}
-                                className="lg:col-span-2 space-y-4 will-change-transform"
+                            <div
+                                className="lg:col-span-2 space-y-4"
                             >
                                 {cartItems.map((item) => (
-                                    <motion.div
+                                    <div
                                         key={item.id}
-                                        variants={fadeInUp}
-                                        className="bg-white border border-gray-200 rounded-lg p-4 md:p-6 flex flex-col sm:flex-row gap-4 hover:shadow-lg transition-shadow duration-300 will-change-transform"
+                                        className="bg-white border border-gray-200 rounded-lg p-4 md:p-6 flex flex-col sm:flex-row gap-4 hover:shadow-lg transition-shadow duration-300"
                                     >
                                         {/* Product Image */}
                                         <div className="relative w-full sm:w-32 h-32 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden">
@@ -237,16 +203,13 @@ export default function CartPage() {
                                                 E.G {(item.price * item.quantity).toFixed(2)}
                                             </p>
                                         </div>
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </motion.div>
+                            </div>
 
                             {/* Cart Summary */}
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                variants={fadeInUp}
-                                className="lg:col-span-1 will-change-transform"
+                            <div
+                                className="lg:col-span-1"
                             >
                                 <div className="bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 rounded-lg p-4 sticky top-24">
                                     <h2 className="text-xl font-serif italic text-gray-800 mb-4">Order Summary</h2>
@@ -276,7 +239,7 @@ export default function CartPage() {
                                         Continue Shopping
                                     </Link>
                                 </div>
-                            </motion.div>
+                            </div>
                         </div>
                     )}
                 </div>

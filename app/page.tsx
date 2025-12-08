@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 import { useRef } from "react"
 import { Menu, ShoppingBag, Star } from "lucide-react"
 import { useState, useEffect } from "react"
-import { motion, useInView } from "framer-motion"
 import { useCart } from "@/contexts/cart-context"
 import MobileMenu from "@/components/MobileMenu"
+import { motion, useInView } from "framer-motion"
 
 const featuredProducts = [
   {
@@ -48,17 +48,14 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { cartCount, addToCart } = useCart()
 
-  // Refs for scroll animations
-  const heroRef = useRef(null)
-  const productRef = useRef(null)
-  const collectionsRef = useRef(null)
+  // Refs for scroll-triggered animations
+  const categoryRef = useRef(null)
+  const featuredRef = useRef(null)
   const contactRef = useRef(null)
 
-  // Check if sections are in view
-  const heroInView = useInView(heroRef, { once: true, amount: 0.3 })
-  const productInView = useInView(productRef, { once: true, amount: 0.2 })
-  const collectionsInView = useInView(collectionsRef, { once: true, amount: 0.2 })
-  const contactInView = useInView(contactRef, { once: true, amount: 0.2 })
+  const categoryInView = useInView(categoryRef, { once: true, margin: "-100px" })
+  const featuredInView = useInView(featuredRef, { once: true, margin: "-100px" })
+  const contactInView = useInView(contactRef, { once: true, margin: "-100px" })
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
@@ -67,52 +64,7 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Animation variants
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 70,
-        damping: 20,
-        mass: 1
-      }
-    }
-  }
 
-  const fadeIn = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 0.8, ease: "easeOut" }
-    }
-  }
-
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.1
-      }
-    }
-  }
-
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        type: "spring",
-        stiffness: 60,
-        damping: 15
-      }
-    }
-  }
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
@@ -195,15 +147,26 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <motion.div
-              ref={heroRef}
-              initial="hidden"
-              animate={heroInView ? "visible" : "hidden"}
-              variants={fadeInUp}
-              className="space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1 will-change-transform"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1"
             >
               <div className="space-y-3 sm:space-y-4 lg:space-y-6">
-                <p className="text-pink-600 text-xs sm:text-sm uppercase tracking-wider font-medium">Trendy Girls Accessories</p>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight">
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  className="text-pink-600 text-xs sm:text-sm uppercase tracking-wider font-medium"
+                >
+                  Trendy Girls Accessories
+                </motion.p>
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.6 }}
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight"
+                >
                   Express Your
                   <br />
                   <span className="text-pink-600 relative">
@@ -217,36 +180,50 @@ export default function Home() {
                       />
                     </svg>
                   </span>
-                </h1>
+                </motion.h1>
               </div>
-              <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md">
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md"
+              >
                 Discover our curated collection of stylish accessories - from elegant jewelry to trendy bags, clips, and
                 hair accessories for every occasion.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4"
+              >
                 <Link href="/collection">
                   <Button className="btn-primary group w-full sm:w-auto">
                     SHOP COLLECTION
                     <ShoppingBag className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </Link>
-              </div>
-              <div className="flex items-center space-x-4 sm:space-x-6 pt-2 sm:pt-4">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                className="flex items-center space-x-4 sm:space-x-6 pt-2 sm:pt-4"
+              >
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-pink-400 text-pink-400" />
                   ))}
                 </div>
                 <p className="text-sm text-gray-600">Loved by 50,000+ girls</p>
-              </div>
+              </motion.div>
             </motion.div>
 
             <motion.div
-              initial="hidden"
-              animate={heroInView ? "visible" : "hidden"}
-              variants={fadeIn}
-              transition={{ delay: 0.3 }}
-              className="relative order-1 lg:order-2 will-change-transform"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.7, ease: "easeOut" }}
+              className="relative order-1 lg:order-2"
             >
               <div className="relative group">
                 <div className="aspect-square overflow-hidden rounded-3xl shadow-primary-lg">
@@ -274,20 +251,22 @@ export default function Home() {
       <section
         id="about"
         className="py-16 bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 relative overflow-hidden"
+        ref={categoryRef}
       >
         <div className="container mx-auto px-6">
-          <motion.div
-            ref={collectionsRef}
-            initial="hidden"
-            animate={collectionsInView ? "visible" : "hidden"}
-            variants={staggerContainer}
-            className="grid lg:grid-cols-12 gap-6 items-start will-change-transform"
+          <div
+            className="grid lg:grid-cols-12 gap-6 items-start"
           >
 
             {/* Left Content Area (Previously Right) */}
             <div className="lg:col-span-7 space-y-8 order-2 lg:order-1">
               {/* Header */}
-              <div className="space-y-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={categoryInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.6 }}
+                className="space-y-4"
+              >
                 <div className="flex items-center space-x-4">
                   <span className="h-[1px] w-12 bg-black"></span>
                   <span className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500">Shop By Category</span>
@@ -299,7 +278,7 @@ export default function Home() {
                 <p className="text-gray-600 text-base leading-relaxed font-light max-w-md pt-2">
                   Explore our diverse collection of accessories - each category curated with style and quality in mind.
                 </p>
-              </div>
+              </motion.div>
 
               {/* Uniform Grid */}
               <div className="grid grid-cols-3 gap-4">
@@ -308,29 +287,41 @@ export default function Home() {
                   { title: "Bags", desc: "Handbags", img: "/f1.jpg", link: "/collection?category=Bags" },
                   { title: "Hair", desc: "Accessories", img: "/f2.jpg", link: "/collection?category=Hair Accessories" },
                 ].map((item, i) => (
-                  <Link key={i} href={item.link} className="relative group cursor-pointer overflow-hidden aspect-[3/4]">
-                    <Image
-                      src={item.img}
-                      alt={item.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <h3 className="text-xl font-serif italic">{item.title}</h3>
-                      <p className="text-[10px] uppercase tracking-widest opacity-90">{item.desc}</p>
-                    </div>
-                  </Link>
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={categoryInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                    transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }}
+                  >
+                    <Link href={item.link} className="relative group cursor-pointer overflow-hidden aspect-[3/4] block">
+                      <Image
+                        src={item.img}
+                        alt={item.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <h3 className="text-xl font-serif italic">{item.title}</h3>
+                        <p className="text-[10px] uppercase tracking-widest opacity-90">{item.desc}</p>
+                      </div>
+                    </Link>
+                  </motion.div>
                 ))}
               </div>
 
-              <div className="pt-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={categoryInView ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                className="pt-2"
+              >
                 <Link href="/collection">
                   <Button className="bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none px-10 py-5 h-auto text-xs tracking-widest uppercase transition-all duration-300">
                     View All Collections
                   </Button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
 
             {/* Right Main Image (Previously Left) */}
@@ -347,30 +338,33 @@ export default function Home() {
               </div>
             </div>
 
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Featured Products Grid */}
-      <section id="featured" className="py-24 bg-white">
+      <section id="featured" className="py-24 bg-white" ref={featuredRef}>
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={featuredInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
             <span className="text-pink-600 text-xs uppercase tracking-widest font-medium">Top Picks</span>
             <h2 className="text-3xl md:text-4xl font-serif italic font-light text-black mt-3 mb-4">Featured Collection</h2>
             <div className="w-12 h-0.5 bg-pink-100 mx-auto"></div>
-          </div>
+          </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
+          <div
             className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
           >
-            {featuredProducts.map((product) => (
+            {featuredProducts.map((product, index) => (
               <motion.div
                 key={product.id}
-                variants={fadeInUp}
+                initial={{ opacity: 0, y: 30 }}
+                animate={featuredInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ delay: 0.1 + index * 0.1, duration: 0.5 }}
                 className="group flex flex-col"
               >
                 <div className="relative aspect-square overflow-hidden bg-gray-50 rounded-lg mb-4">
@@ -407,28 +401,32 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
 
-          <div className="text-center mt-16">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={featuredInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            className="text-center mt-16"
+          >
             <Link href="/collection">
               <Button className="bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none px-12 py-4 h-auto text-xs tracking-widest uppercase transition-all duration-300">
                 View All Products
               </Button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
 
 
       {/* Contact Us Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-white via-white to-gray-300">
+      <section id="contact" className="py-20 bg-gradient-to-br from-white via-white to-gray-300" ref={contactRef}>
         <div className="container mx-auto px-6">
           <motion.div
-            ref={contactRef}
-            initial="hidden"
-            animate={contactInView ? "visible" : "hidden"}
-            variants={fadeInUp}
+            initial={{ opacity: 0, y: 20 }}
+            animate={contactInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
             <div className="flex items-center justify-center space-x-4 mb-4">
@@ -446,7 +444,12 @@ export default function Home() {
             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 {/* WhatsApp Contact */}
-                <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={contactInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -466,10 +469,15 @@ export default function Home() {
                   >
                     Start Chat
                   </a>
-                </div>
+                </motion.div>
 
                 {/* Email Contact */}
-                <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={contactInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -487,11 +495,16 @@ export default function Home() {
                   >
                     Send Email
                   </a>
-                </div>
+                </motion.div>
               </div>
 
               {/* Social Media Links */}
-              <div className="text-center">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={contactInView ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                className="text-center"
+              >
                 <p className="text-gray-600 mb-6 font-light">Follow us on social media</p>
                 <div className="flex justify-center space-x-6">
                   {/* Instagram */}
@@ -542,7 +555,7 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>
