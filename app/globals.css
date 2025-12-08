@@ -13,25 +13,57 @@
 }
 
 @layer utilities {
-  /* Animation utilities */
+  /* Replaced laggy animations with GPU-optimized smooth animations */
+
+  /* Smooth fade in - uses opacity only for performance */
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
+    animation: smoothFadeIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
+  /* Smooth underline draw animation - optimized with strokeDashoffset */
   .animate-draw {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: draw 2s ease-out forwards;
+    animation: smoothDraw 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .animation-delay-500 {
     animation-delay: 500ms;
   }
 
-  @keyframes fadeIn {
+  /* New professional keyframes using GPU-accelerated properties */
+  @keyframes smoothFadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes smoothDraw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* Smooth scale-in animation */
+  @keyframes smoothScaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Smooth slide-up animation */
+  @keyframes smoothSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
     }
     to {
       opacity: 1;
@@ -39,10 +71,27 @@
     }
   }
 
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
+  /* Subtle pulse animation */
+  @keyframes subtlePulse {
+    0%,
+    100% {
+      opacity: 1;
     }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  .animate-scale-in {
+    animation: smoothScaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .animate-slide-up {
+    animation: smoothSlideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .animate-subtle-pulse {
+    animation: subtlePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 }
 
