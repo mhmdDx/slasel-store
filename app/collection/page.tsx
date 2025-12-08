@@ -200,11 +200,16 @@ const products = [
 ]
 
 const fadeInUp = {
-    hidden: { opacity: 0, y: 60 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.6 }
+        transition: {
+            type: "spring",
+            stiffness: 70,
+            damping: 20,
+            mass: 1
+        } as const
     }
 }
 
@@ -214,7 +219,7 @@ const staggerContainer = {
         opacity: 1,
         transition: {
             staggerChildren: 0.1,
-            delayChildren: 0.2
+            delayChildren: 0.1
         }
     }
 }
@@ -224,7 +229,11 @@ const scaleIn = {
     visible: {
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.4 }
+        transition: {
+            type: "spring",
+            stiffness: 60,
+            damping: 15
+        } as const
     }
 }
 
@@ -326,7 +335,7 @@ function CollectionContent() {
                         initial="hidden"
                         animate="visible"
                         variants={fadeInUp}
-                        className="text-center max-w-3xl mx-auto"
+                        className="text-center max-w-3xl mx-auto will-change-transform"
                     >
                         <div className="flex items-center justify-center space-x-4 mb-6">
                             <span className="h-[1px] w-12 bg-pink-500"></span>
@@ -364,7 +373,7 @@ function CollectionContent() {
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 10 }}
                                         transition={{ duration: 0.2 }}
-                                        className="absolute left-0 md:left-auto md:right-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"
+                                        className="absolute left-0 md:left-auto md:right-0 mt-4 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 will-change-transform"
                                     >
                                         {categories.map((category) => (
                                             <button
@@ -411,7 +420,7 @@ function CollectionContent() {
                         initial="hidden"
                         animate="visible"
                         variants={staggerContainer}
-                        className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-12 md:gap-x-6 md:gap-y-16"
+                        className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-12 md:gap-x-6 md:gap-y-16 will-change-transform"
                     >
                         {filteredProducts.map((product) => (
                             <motion.div
@@ -422,7 +431,7 @@ function CollectionContent() {
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.3 }}
-                                className="group flex flex-col h-full"
+                                className="group flex flex-col h-full will-change-transform"
                             >
                                 <div className="bg-white rounded-lg overflow-hidden flex-grow flex flex-col">
                                     {/* Product Image */}

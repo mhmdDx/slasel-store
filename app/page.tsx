@@ -69,11 +69,16 @@ export default function Home() {
 
   // Animation variants
   const fadeInUp = {
-    hidden: { opacity: 0, y: 60 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 }
+      transition: {
+        type: "spring",
+        stiffness: 70,
+        damping: 20,
+        mass: 1
+      }
     }
   }
 
@@ -81,7 +86,7 @@ export default function Home() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.8 }
+      transition: { duration: 0.8, ease: "easeOut" }
     }
   }
 
@@ -90,18 +95,22 @@ export default function Home() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.15,
         delayChildren: 0.1
       }
     }
   }
 
   const scaleIn = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5 }
+      transition: {
+        type: "spring",
+        stiffness: 60,
+        damping: 15
+      }
     }
   }
 
@@ -190,7 +199,7 @@ export default function Home() {
               initial="hidden"
               animate={heroInView ? "visible" : "hidden"}
               variants={fadeInUp}
-              className="space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1"
+              className="space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1 will-change-transform"
             >
               <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                 <p className="text-pink-600 text-xs sm:text-sm uppercase tracking-wider font-medium">Trendy Girls Accessories</p>
@@ -237,7 +246,7 @@ export default function Home() {
               animate={heroInView ? "visible" : "hidden"}
               variants={fadeIn}
               transition={{ delay: 0.3 }}
-              className="relative order-1 lg:order-2"
+              className="relative order-1 lg:order-2 will-change-transform"
             >
               <div className="relative group">
                 <div className="aspect-square overflow-hidden rounded-3xl shadow-primary-lg">
@@ -272,7 +281,7 @@ export default function Home() {
             initial="hidden"
             animate={collectionsInView ? "visible" : "hidden"}
             variants={staggerContainer}
-            className="grid lg:grid-cols-12 gap-6 items-start"
+            className="grid lg:grid-cols-12 gap-6 items-start will-change-transform"
           >
 
             {/* Left Content Area (Previously Right) */}

@@ -28,11 +28,16 @@ const initialCartItems = [
 ]
 
 const fadeInUp = {
-    hidden: { opacity: 0, y: 60 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.6 }
+        transition: {
+            type: "spring",
+            stiffness: 70,
+            damping: 20,
+            mass: 1
+        } as const
     }
 }
 
@@ -42,7 +47,7 @@ const staggerContainer = {
         opacity: 1,
         transition: {
             staggerChildren: 0.1,
-            delayChildren: 0.2
+            delayChildren: 0.1
         }
     }
 }
@@ -127,7 +132,7 @@ export default function CartPage() {
                         initial="hidden"
                         animate="visible"
                         variants={fadeInUp}
-                        className="text-center max-w-3xl mx-auto"
+                        className="text-center max-w-3xl mx-auto will-change-transform"
                     >
                         <div className="flex items-center justify-center space-x-4 mb-6">
                             <span className="h-[1px] w-12 bg-pink-500"></span>
@@ -154,7 +159,7 @@ export default function CartPage() {
                             initial="hidden"
                             animate="visible"
                             variants={fadeInUp}
-                            className="text-center py-20"
+                            className="text-center py-20 will-change-transform"
                         >
                             <ShoppingBag className="w-24 h-24 mx-auto text-gray-300 mb-6" />
                             <h2 className="text-3xl font-light text-gray-800 mb-4">Your cart is empty</h2>
@@ -173,13 +178,13 @@ export default function CartPage() {
                                 initial="hidden"
                                 animate="visible"
                                 variants={staggerContainer}
-                                className="lg:col-span-2 space-y-4"
+                                className="lg:col-span-2 space-y-4 will-change-transform"
                             >
                                 {cartItems.map((item) => (
                                     <motion.div
                                         key={item.id}
                                         variants={fadeInUp}
-                                        className="bg-white border border-gray-200 rounded-lg p-4 md:p-6 flex flex-col sm:flex-row gap-4 hover:shadow-lg transition-shadow duration-300"
+                                        className="bg-white border border-gray-200 rounded-lg p-4 md:p-6 flex flex-col sm:flex-row gap-4 hover:shadow-lg transition-shadow duration-300 will-change-transform"
                                     >
                                         {/* Product Image */}
                                         <div className="relative w-full sm:w-32 h-32 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden">
@@ -241,7 +246,7 @@ export default function CartPage() {
                                 initial="hidden"
                                 animate="visible"
                                 variants={fadeInUp}
-                                className="lg:col-span-1"
+                                className="lg:col-span-1 will-change-transform"
                             >
                                 <div className="bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 rounded-lg p-4 sticky top-24">
                                     <h2 className="text-xl font-serif italic text-gray-800 mb-4">Order Summary</h2>
