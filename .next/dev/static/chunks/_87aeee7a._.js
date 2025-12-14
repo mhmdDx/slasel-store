@@ -589,6 +589,49 @@ const products = [
         price: "E.G 129.99",
         image: "/pags/download (2).jpeg",
         category: "Bags"
+    },
+    // New Watches
+    {
+        id: 27,
+        name: "Rose Gold Minimalist Watch",
+        price: "E.G 189.99",
+        image: "/Wathces/Gemini_Generated_Image_543ka2543ka2543k.png",
+        category: "Watches"
+    },
+    {
+        id: 28,
+        name: "Silver Mesh Strap Watch",
+        price: "E.G 159.99",
+        image: "/Wathces/Gemini_Generated_Image_9g9jpm9g9jpm9g9j.png",
+        category: "Watches"
+    },
+    {
+        id: 29,
+        name: "Classic Leather Strap Watch",
+        price: "E.G 129.99",
+        image: "/Wathces/Gemini_Generated_Image_hvuun7hvuun7hvuu.png",
+        category: "Watches"
+    },
+    {
+        id: 30,
+        name: "Modern Black Dial Watch",
+        price: "E.G 199.99",
+        image: "/Wathces/Gemini_Generated_Image_nrz7jgnrz7jgnrz7.png",
+        category: "Watches"
+    },
+    {
+        id: 31,
+        name: "Luxury Diamond Bezel Watch",
+        price: "E.G 299.99",
+        image: "/Wathces/Gemini_Generated_Image_qfwq74qfwq74qfwq.png",
+        category: "Watches"
+    },
+    {
+        id: 32,
+        name: "Elegant Two-Tone Watch",
+        price: "E.G 249.99",
+        image: "/Wathces/Gemini_Generated_Image_vovb0vovb0vovb0v.png",
+        category: "Watches"
     }
 ];
 function CollectionContent() {
@@ -656,12 +699,12 @@ function CollectionContent() {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 294,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 247,
+                                lineNumber: 290,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -676,17 +719,17 @@ function CollectionContent() {
                                         className: "h-10 w-auto"
                                     }, void 0, false, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 300,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 299,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 255,
+                                lineNumber: 298,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -701,13 +744,13 @@ function CollectionContent() {
                                                 className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 265,
+                                                lineNumber: 308,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 263,
+                                        lineNumber: 306,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -719,13 +762,13 @@ function CollectionContent() {
                                                 className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 269,
+                                                lineNumber: 312,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 310,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -737,13 +780,13 @@ function CollectionContent() {
                                                 className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 273,
+                                                lineNumber: 316,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 271,
+                                        lineNumber: 314,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -755,19 +798,19 @@ function CollectionContent() {
                                                 className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 278,
+                                                lineNumber: 321,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 276,
+                                        lineNumber: 319,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 262,
+                                lineNumber: 305,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -785,48 +828,48 @@ function CollectionContent() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 287,
+                                            lineNumber: 330,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$bag$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingBag$3e$__["ShoppingBag"], {
                                             className: "w-6 h-6 lg:hidden"
                                         }, void 0, false, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 331,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "absolute -top-2 -right-2 w-2 h-2 bg-pink-500 rounded-full animate-pulse"
                                         }, void 0, false, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 289,
+                                            lineNumber: 332,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 286,
+                                    lineNumber: 329,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 284,
+                                lineNumber: 327,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/collection/page.tsx",
-                        lineNumber: 245,
+                        lineNumber: 288,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/collection/page.tsx",
-                    lineNumber: 244,
+                    lineNumber: 287,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 243,
+                lineNumber: 286,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MobileMenu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -834,7 +877,7 @@ function CollectionContent() {
                 onClose: ()=>setMobileMenuOpen(false)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 299,
+                lineNumber: 342,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -851,7 +894,7 @@ function CollectionContent() {
                                         className: "h-[1px] w-12 bg-pink-500"
                                     }, void 0, false, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 308,
+                                        lineNumber: 351,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -859,20 +902,20 @@ function CollectionContent() {
                                         children: "Shop Our Favorites"
                                     }, void 0, false, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 309,
+                                        lineNumber: 352,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "h-[1px] w-12 bg-pink-500"
                                     }, void 0, false, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 310,
+                                        lineNumber: 353,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 307,
+                                lineNumber: 350,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -884,13 +927,13 @@ function CollectionContent() {
                                         children: "Collections"
                                     }, void 0, false, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 313,
+                                        lineNumber: 356,
                                         columnNumber: 37
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 312,
+                                lineNumber: 355,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -898,23 +941,23 @@ function CollectionContent() {
                                 children: "Discover our handpicked selection of elegant jewelry and trendy hair accessories. Find the perfect pieces to express your unique style."
                             }, void 0, false, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 315,
+                                lineNumber: 358,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/collection/page.tsx",
-                        lineNumber: 304,
+                        lineNumber: 347,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/collection/page.tsx",
-                    lineNumber: 303,
+                    lineNumber: 346,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 302,
+                lineNumber: 345,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -935,27 +978,27 @@ function CollectionContent() {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 331,
+                                                lineNumber: 374,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "Filter"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 332,
+                                                lineNumber: 375,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                                 className: `w-4 h-4 transition-transform duration-300 ${isFilterOpen ? 'rotate-180' : ''}`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 333,
+                                                lineNumber: 376,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 327,
+                                        lineNumber: 370,
                                         columnNumber: 29
                                     }, this),
                                     isFilterOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -969,23 +1012,23 @@ function CollectionContent() {
                                                 children: category
                                             }, category, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 341,
+                                                lineNumber: 384,
                                                 columnNumber: 41
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 337,
+                                        lineNumber: 380,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 326,
+                                lineNumber: 369,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 325,
+                            lineNumber: 368,
                             columnNumber: 21
                         }, this),
                         selectedCategory !== "All" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -995,7 +1038,7 @@ function CollectionContent() {
                                     children: "Active Filter:"
                                 }, void 0, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 363,
+                                    lineNumber: 406,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1003,7 +1046,7 @@ function CollectionContent() {
                                     children: selectedCategory
                                 }, void 0, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 364,
+                                    lineNumber: 407,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1012,24 +1055,24 @@ function CollectionContent() {
                                     children: "Clear"
                                 }, void 0, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 365,
+                                    lineNumber: 408,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 362,
+                            lineNumber: 405,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/collection/page.tsx",
-                    lineNumber: 324,
+                    lineNumber: 367,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 323,
+                lineNumber: 366,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1059,25 +1102,25 @@ function CollectionContent() {
                                                             className: "object-cover group-hover:scale-110 transition-transform duration-700"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/collection/page.tsx",
-                                                            lineNumber: 393,
+                                                            lineNumber: 436,
                                                             columnNumber: 45
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/collection/page.tsx",
-                                                            lineNumber: 399,
+                                                            lineNumber: 442,
                                                             columnNumber: 45
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 392,
+                                                    lineNumber: 435,
                                                     columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 391,
+                                                lineNumber: 434,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1088,7 +1131,7 @@ function CollectionContent() {
                                                         children: product.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 405,
+                                                        lineNumber: 448,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1096,7 +1139,7 @@ function CollectionContent() {
                                                         children: product.price
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 408,
+                                                        lineNumber: 451,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1107,34 +1150,34 @@ function CollectionContent() {
                                                             children: addedItems[product.id] ? "Added" : "Add to Cart"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/collection/page.tsx",
-                                                            lineNumber: 413,
+                                                            lineNumber: 456,
                                                             columnNumber: 45
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 412,
+                                                        lineNumber: 455,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 404,
+                                                lineNumber: 447,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 389,
+                                        lineNumber: 432,
                                         columnNumber: 33
                                     }, this)
                                 }, product.id, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 383,
+                                    lineNumber: 426,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 379,
+                            lineNumber: 422,
                             columnNumber: 21
                         }, this),
                         filteredProducts.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1144,23 +1187,23 @@ function CollectionContent() {
                                 children: "No products found in this category."
                             }, void 0, false, {
                                 fileName: "[project]/app/collection/page.tsx",
-                                lineNumber: 428,
+                                lineNumber: 471,
                                 columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 427,
+                            lineNumber: 470,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/collection/page.tsx",
-                    lineNumber: 378,
+                    lineNumber: 421,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 377,
+                lineNumber: 420,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1173,7 +1216,7 @@ function CollectionContent() {
                             children: "Can't Find What You're Looking For?"
                         }, void 0, false, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 437,
+                            lineNumber: 480,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1181,7 +1224,7 @@ function CollectionContent() {
                             children: "Contact us for custom jewelry pieces or special requests. We're here to help you find the perfect accessory."
                         }, void 0, false, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 440,
+                            lineNumber: 483,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1189,18 +1232,18 @@ function CollectionContent() {
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 443,
+                            lineNumber: 486,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/collection/page.tsx",
-                    lineNumber: 436,
+                    lineNumber: 479,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 435,
+                lineNumber: 478,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -1221,7 +1264,7 @@ function CollectionContent() {
                                             className: "h-10 w-auto mb-4"
                                         }, void 0, false, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 455,
+                                            lineNumber: 498,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1229,7 +1272,7 @@ function CollectionContent() {
                                             children: "Your destination for premium accessories. We curate timeless pieces that define your unique style."
                                         }, void 0, false, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 462,
+                                            lineNumber: 505,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1248,17 +1291,17 @@ function CollectionContent() {
                                                             d: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/collection/page.tsx",
-                                                            lineNumber: 468,
+                                                            lineNumber: 511,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 467,
+                                                        lineNumber: 510,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 466,
+                                                    lineNumber: 509,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1274,17 +1317,17 @@ function CollectionContent() {
                                                             d: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/collection/page.tsx",
-                                                            lineNumber: 473,
+                                                            lineNumber: 516,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 472,
+                                                        lineNumber: 515,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 471,
+                                                    lineNumber: 514,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1300,223 +1343,23 @@ function CollectionContent() {
                                                             d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/collection/page.tsx",
-                                                            lineNumber: 478,
+                                                            lineNumber: 521,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 477,
+                                                        lineNumber: 520,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 476,
+                                                    lineNumber: 519,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 465,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 454,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "text-lg font-medium mb-4 uppercase tracking-wider",
-                                            children: "Quick Links"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 486,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "space-y-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Home"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 488,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 488,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#collections",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Collections"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 489,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 489,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "New Arrivals"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 490,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 490,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Best Sellers"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 491,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 491,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Sale"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 492,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 492,
-                                                    columnNumber: 33
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 487,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 485,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "text-lg font-medium mb-4 uppercase tracking-wider",
-                                            children: "Customer Service"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 498,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "space-y-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Contact Us"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 500,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 500,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Shipping Info"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 501,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 501,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Returns & Exchanges"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 502,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 502,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "FAQs"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 503,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 503,
-                                                    columnNumber: 33
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
-                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
-                                                        children: "Size Guide"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/collection/page.tsx",
-                                                        lineNumber: 504,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 504,
-                                                    columnNumber: 33
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 499,
+                                            lineNumber: 508,
                                             columnNumber: 29
                                         }, this)
                                     ]
@@ -1529,10 +1372,210 @@ function CollectionContent() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                             className: "text-lg font-medium mb-4 uppercase tracking-wider",
+                                            children: "Quick Links"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/collection/page.tsx",
+                                            lineNumber: 529,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                            className: "space-y-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Home"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 531,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 531,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#collections",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Collections"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 532,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 532,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "New Arrivals"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 533,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 533,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Best Sellers"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 534,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 534,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Sale"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 535,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 535,
+                                                    columnNumber: 33
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/collection/page.tsx",
+                                            lineNumber: 530,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/collection/page.tsx",
+                                    lineNumber: 528,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            className: "text-lg font-medium mb-4 uppercase tracking-wider",
+                                            children: "Customer Service"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/collection/page.tsx",
+                                            lineNumber: 541,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                            className: "space-y-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Contact Us"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 543,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 543,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Shipping Info"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 544,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 544,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Returns & Exchanges"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 545,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 545,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "FAQs"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 546,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 546,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "#",
+                                                        className: "text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm",
+                                                        children: "Size Guide"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/collection/page.tsx",
+                                                        lineNumber: 547,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/collection/page.tsx",
+                                                    lineNumber: 547,
+                                                    columnNumber: 33
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/collection/page.tsx",
+                                            lineNumber: 542,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/collection/page.tsx",
+                                    lineNumber: 540,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            className: "text-lg font-medium mb-4 uppercase tracking-wider",
                                             children: "Newsletter"
                                         }, void 0, false, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 510,
+                                            lineNumber: 553,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1540,7 +1583,7 @@ function CollectionContent() {
                                             children: "Subscribe to get special offers and updates."
                                         }, void 0, false, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 511,
+                                            lineNumber: 554,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1552,7 +1595,7 @@ function CollectionContent() {
                                                     className: "px-4 py-3 bg-gray-800 text-white rounded-sm focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 515,
+                                                    lineNumber: 558,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1560,25 +1603,25 @@ function CollectionContent() {
                                                     children: "Subscribe"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 520,
+                                                    lineNumber: 563,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 514,
+                                            lineNumber: 557,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 509,
+                                    lineNumber: 552,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 452,
+                            lineNumber: 495,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1596,7 +1639,7 @@ function CollectionContent() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 530,
+                                            lineNumber: 573,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1608,7 +1651,7 @@ function CollectionContent() {
                                                     children: "Privacy Policy"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 534,
+                                                    lineNumber: 577,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1617,7 +1660,7 @@ function CollectionContent() {
                                                     children: "Terms of Service"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 535,
+                                                    lineNumber: 578,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1626,19 +1669,19 @@ function CollectionContent() {
                                                     children: "Cookie Policy"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/collection/page.tsx",
-                                                    lineNumber: 536,
+                                                    lineNumber: 579,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/collection/page.tsx",
-                                            lineNumber: 533,
+                                            lineNumber: 576,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 529,
+                                    lineNumber: 572,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1656,41 +1699,41 @@ function CollectionContent() {
                                                 children: "mhmdDx"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/collection/page.tsx",
-                                                lineNumber: 542,
+                                                lineNumber: 585,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/collection/page.tsx",
-                                        lineNumber: 540,
+                                        lineNumber: 583,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/collection/page.tsx",
-                                    lineNumber: 539,
+                                    lineNumber: 582,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/collection/page.tsx",
-                            lineNumber: 528,
+                            lineNumber: 571,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/collection/page.tsx",
-                    lineNumber: 451,
+                    lineNumber: 494,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 450,
+                lineNumber: 493,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/collection/page.tsx",
-        lineNumber: 241,
+        lineNumber: 284,
         columnNumber: 9
     }, this);
 }
@@ -1712,7 +1755,7 @@ function CollectionPage() {
                         className: "inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-pink-500 border-r-transparent"
                     }, void 0, false, {
                         fileName: "[project]/app/collection/page.tsx",
-                        lineNumber: 563,
+                        lineNumber: 606,
                         columnNumber: 17
                     }, void 0),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1720,28 +1763,28 @@ function CollectionPage() {
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/app/collection/page.tsx",
-                        lineNumber: 564,
+                        lineNumber: 607,
                         columnNumber: 17
                     }, void 0)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/collection/page.tsx",
-                lineNumber: 562,
+                lineNumber: 605,
                 columnNumber: 13
             }, void 0)
         }, void 0, false, {
             fileName: "[project]/app/collection/page.tsx",
-            lineNumber: 561,
+            lineNumber: 604,
             columnNumber: 29
         }, void 0),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CollectionContent, {}, void 0, false, {
             fileName: "[project]/app/collection/page.tsx",
-            lineNumber: 567,
+            lineNumber: 610,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/collection/page.tsx",
-        lineNumber: 561,
+        lineNumber: 604,
         columnNumber: 9
     }, this);
 }
