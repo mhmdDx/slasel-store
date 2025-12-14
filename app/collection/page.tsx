@@ -16,77 +16,77 @@ const products = [
         name: "Elegant Silver Bracelet",
         price: "E.G 89.99",
         image: "/jawlry/Fantastic Pure 935 Argentium Silver Open Flower Beautiful Pearl Unique Bracelet.jpeg",
-        category: "Jewelry"
+        category: "Bracelets"
     },
     {
         id: 2,
         name: "Infinity Knot Necklace",
         price: "E.G 129.99",
         image: "/jawlry/Infinity Knot Necklace.jpeg",
-        category: "Jewelry"
+        category: "Necklaces"
     },
     {
         id: 3,
         name: "Gold Wrap Bangle",
         price: "E.G 149.99",
         image: "/jawlry/Naomi Wrap Hinge Bangle - Gold - Gold.jpeg",
-        category: "Jewelry"
+        category: "Bracelets"
     },
     {
         id: 4,
         name: "Delicate Necklaces",
         price: "E.G 79.99",
         image: "/jawlry/Necklaces.jpeg",
-        category: "Jewelry"
+        category: "Necklaces"
     },
     {
         id: 5,
         name: "Elegant Gold Watch",
         price: "E.G 199.99",
         image: "/jawlry/Small Gold Watches for Women,Analog Womens Watch with Stainless Steel Expansion Band,Oval Case.jpeg",
-        category: "Jewelry"
+        category: "Watches"
     },
     {
         id: 6,
         name: "Pearl Bracelet Set",
         price: "E.G 119.99",
         image: "/jawlry/The Town & Country Preppy Awards.jpeg",
-        category: "Jewelry"
+        category: "Bracelets"
     },
     {
         id: 7,
         name: "Zircon Steel Ring",
         price: "E.G 59.99",
         image: "/jawlry/Zircon-Stainless-Steel-Ring-O-Shape-Geometric-Open-Adjustable-For-Women-Gold-Color-Ring-Fashion-Popular_152be46b-e8d8-4414-8eee-9d31ba9ee2a0.webp",
-        category: "Jewelry"
+        category: "Rings"
     },
     {
         id: 8,
         name: "Rose Gold Bracelet",
         price: "E.G 139.99",
         image: "/jawlry/b3d30f311cfb2a809e0e18a96602659c.webp",
-        category: "Jewelry"
+        category: "Watches"
     },
     {
         id: 9,
-        name: "Classic Pearl Necklace",
+        name: "Classic Pearl Watch",
         price: "E.G 169.99",
         image: "/jawlry/download (1).jpeg",
-        category: "Jewelry"
+        category: "Watches"
     },
     {
         id: 10,
         name: "Van Cleef Bracelet",
         price: "E.G 299.99",
         image: "/jawlry/van cleef bracelet.jpeg",
-        category: "Jewelry"
+        category: "Bracelets"
     },
     {
         id: 11,
         name: "Designer Ring",
         price: "E.G 99.99",
         image: "/jawlry/850295d6155142fb266e7921090bbfcd_600x.webp",
-        category: "Jewelry"
+        category: "Rings"
     },
     // Hair Accessories
     {
@@ -207,6 +207,8 @@ function CollectionContent() {
     const [selectedCategory, setSelectedCategory] = useState("All")
     const { cartCount, addToCart } = useCart()
 
+    const [addedItems, setAddedItems] = useState<Record<number, boolean>>({})
+
     // Set initial category from URL parameter
     useEffect(() => {
         const categoryParam = searchParams.get('category')
@@ -223,13 +225,17 @@ function CollectionContent() {
             quantity: 1,
             image: product.image
         })
+        setAddedItems(prev => ({ ...prev, [product.id]: true }))
+        setTimeout(() => {
+            setAddedItems(prev => ({ ...prev, [product.id]: false }))
+        }, 2000)
     }
 
     const filteredProducts = selectedCategory === "All"
         ? products
         : products.filter(product => product.category === selectedCategory)
 
-    const categories = ["All", "Jewelry", "Hair Accessories", "Bags"]
+    const categories = ["All", "Bracelets", "Necklaces", "Rings", "Watches", "Hair Accessories", "Bags"]
 
     return (
         <div className="min-h-screen bg-white">
@@ -258,14 +264,15 @@ function CollectionContent() {
                                 HOME
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <Link href="/#about" className="hover:text-pink-500 transition-colors duration-300 relative group">
-                                ABOUT
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
                             <Link href="/collection" className="hover:text-pink-500 transition-colors duration-300 relative group">
                                 COLLECTION
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
+                            <Link href="/#about" className="hover:text-pink-500 transition-colors duration-300 relative group">
+                                ABOUT
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
+
                             <Link href="/#contact" className="hover:text-pink-500 transition-colors duration-300 relative group">
                                 CONTACT US
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
@@ -405,9 +412,9 @@ function CollectionContent() {
                                         <div className="mt-auto pb-2">
                                             <Button
                                                 onClick={() => handleAddToCart(product)}
-                                                className="w-full bg-black text-white hover:bg-pink-500 hover:text-white rounded-sm h-10 text-xs tracking-widest uppercase transition-all duration-300 shadow-sm hover:shadow-md"
+                                                className={`w-full rounded-sm h-10 text-xs tracking-widest uppercase transition-all duration-300 shadow-sm hover:shadow-md ${addedItems[product.id] ? "bg-pink-600 text-white hover:bg-pink-600" : "bg-black text-white hover:bg-pink-500 hover:text-white"}`}
                                             >
-                                                Add to Cart
+                                                {addedItems[product.id] ? "Added" : "Add to Cart"}
                                             </Button>
                                         </div>
                                     </div>
@@ -440,24 +447,111 @@ function CollectionContent() {
             </section>
 
             {/* Footer */}
-            <footer className="bg-black text-white py-12">
-                <div className="container mx-auto px-6 text-center">
-                    <p className="text-gray-400 text-sm">
-                        © {new Date().getFullYear()} Slasel. All rights reserved.
-                    </p>
-                    <p className="text-gray-500 text-sm mt-4">
-                        Made by{" "}
-                        <a
-                            href="https://mohamed-eid.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-pink-400 hover:text-pink-300 transition-colors duration-300 font-medium"
-                        >
-                            mhmdDx
-                        </a>
-                    </p>
+            < footer className="bg-black text-white" >
+                <div className="container mx-auto px-6 py-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                        {/* About Section */}
+                        <div>
+                            <Image
+                                src="/sa-removebg-preview.png"
+                                alt="Salsel Logo"
+                                width={40}
+                                height={40}
+                                className="h-10 w-auto mb-4"
+                            />
+                            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                                Your destination for premium accessories. We curate timeless pieces that define your unique style.
+                            </p>
+                            <div className="flex space-x-4">
+                                <a href="https://instagram.com/salsel" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                                <a href="https://facebook.com/salsel" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/salsel" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors duration-300">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Quick Links */}
+                        <div>
+                            <h4 className="text-lg font-medium mb-4 uppercase tracking-wider">Quick Links</h4>
+                            <ul className="space-y-3">
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Home</a></li>
+                                <li><a href="#collections" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Collections</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">New Arrivals</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Best Sellers</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Sale</a></li>
+                            </ul>
+                        </div>
+
+                        {/* Customer Service */}
+                        <div>
+                            <h4 className="text-lg font-medium mb-4 uppercase tracking-wider">Customer Service</h4>
+                            <ul className="space-y-3">
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Contact Us</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Shipping Info</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Returns & Exchanges</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">FAQs</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Size Guide</a></li>
+                            </ul>
+                        </div>
+
+                        {/* Newsletter */}
+                        <div>
+                            <h4 className="text-lg font-medium mb-4 uppercase tracking-wider">Newsletter</h4>
+                            <p className="text-gray-400 text-sm mb-4">
+                                Subscribe to get special offers and updates.
+                            </p>
+                            <div className="flex flex-col space-y-3">
+                                <input
+                                    type="email"
+                                    placeholder="Your email"
+                                    className="px-4 py-3 bg-gray-800 text-white rounded-sm focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm"
+                                />
+                                <button className="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-sm transition-colors duration-300 font-medium text-sm uppercase tracking-wider">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Bottom Bar */}
+                    <div className="border-t border-gray-800 pt-8">
+                        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                            <p className="text-gray-400 text-sm">
+                                © {new Date().getFullYear()} Slasel. All rights reserved.
+                            </p>
+                            <div className="flex space-x-6">
+                                <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Privacy Policy</a>
+                                <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Terms of Service</a>
+                                <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-sm">Cookie Policy</a>
+                            </div>
+                        </div>
+                        <div className="mt-4 text-center">
+                            <p className="text-gray-500 text-sm">
+                                Made by{" "}
+                                <a
+                                    href="https://mohamed-eid.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-pink-400 hover:text-pink-300 transition-colors duration-300 font-medium"
+                                >
+                                    mhmdDx
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </footer>
+            </footer >
         </div>
     )
 }

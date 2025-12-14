@@ -4,6 +4,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { X, Home, Info, ShoppingBag, Mail } from "lucide-react"
 import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 interface MobileMenuProps {
   isOpen: boolean
@@ -15,6 +17,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden"
+      // Refresh AOS to detect the newly mounted elements
+      AOS.refresh()
     } else {
       document.body.style.overflow = "unset"
     }
@@ -24,10 +28,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   }, [isOpen])
 
   const menuItems = [
-    { href: "/", label: "Home", icon: Home },
-    { href: "/#about", label: "About", icon: Info },
-    { href: "/collection", label: "Collection", icon: ShoppingBag },
-    { href: "/#contact", label: "Contact Us", icon: Mail },
+    { href: "/", label: "Home" },
+    { href: "/collection", label: "Collection" },
+    { href: "/#about", label: "About Us" },
+    { href: "/#contact", label: "Contact Us" },
   ]
 
   if (!isOpen) return null;
@@ -38,11 +42,15 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div
         className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
         onClick={onClose}
+        data-aos="fade"
+        data-aos-duration="300"
       />
 
       {/* Side Drawer */}
       <div
         className="fixed left-0 top-0 h-full w-80 bg-white shadow-2xl z-50 flex flex-col"
+        data-aos="fade-right"
+        data-aos-duration="400"
       >
         {/* Header */}
         <div className="flex items-center bg-pink-300 justify-between p-6 border-b border-gray-100">
@@ -71,13 +79,16 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             {menuItems.map((item, index) => (
               <li
                 key={item.href}
+                data-aos="fade-up"
+                data-aos-delay={100 + index * 50}
+                className="border-b border-pink-100"
               >
                 <Link
                   href={item.href}
                   onClick={onClose}
                   className="flex items-center space-x-4 px-4 py-4 rounded-lg hover:bg-pink-50 transition-all duration-200 group"
                 >
-                  <item.icon className="w-5 h-5 text-gray-400 group-hover:text-pink-600 transition-colors" />
+
                   <span className="text-base font-medium text-gray-700 group-hover:text-pink-600 transition-colors uppercase tracking-wide">
                     {item.label}
                   </span>

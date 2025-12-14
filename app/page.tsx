@@ -83,19 +83,20 @@ export default function Home() {
                 HOME
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-
-              <a href="#about" className="hover:text-pink-500 transition-colors duration-300 relative group">
-                ABOUT
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
               <Link href="/collection" className="hover:text-pink-500 transition-colors duration-300 relative group">
                 COLLECTION
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <a href="#contact" className="hover:text-pink-500 transition-colors duration-300 relative group">
+
+              <Link href="#about" className="hover:text-pink-500 transition-colors duration-300 relative group">
+                ABOUT
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+
+              <Link href="#contact" className="hover:text-pink-500 transition-colors duration-300 relative group">
                 CONTACT US
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </Link>
 
             </div>
 
@@ -164,12 +165,12 @@ export default function Home() {
                 hair accessories for every occasion.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="300">
-                <Link href="/collection">
-                  <Button className="btn-primary bg-gray-900 hover:bg-black text-white px-8 py-6 rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105 shadow-lg group w-full sm:w-auto text-sm tracking-widest uppercase font-medium ">
+                <Button asChild className=" btn-primary bg-gray-900 hover:bg-black text-white px-8 py-6 rounded-[30px] transition-all duration-300 hover:shadow-2xl hover:scale-105 shadow-lg group  sm:w-auto text-sm tracking-widest uppercase font-medium ">
+                  <Link href="/collection">
                     SHOP COLLECTION
                     <ShoppingBag className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
               <div className="flex items-center space-x-4 sm:space-x-6 pt-2 sm:pt-4">
 
@@ -254,11 +255,11 @@ export default function Home() {
               </div>
 
               <div className="pt-2">
-                <Link href="/collection">
-                  <Button className="bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none px-10 py-5 h-auto text-xs tracking-widest uppercase transition-all duration-300">
+                <Button asChild className="bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none px-10 py-5 h-auto text-xs tracking-widest uppercase transition-all duration-300">
+                  <Link href="/collection">
                     View All Collections
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
 
@@ -336,11 +337,11 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-16">
-            <Link href="/collection">
-              <Button className="bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none px-12 py-4 h-auto text-xs tracking-widest uppercase transition-all duration-300">
+            <Button asChild className="bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none px-12 py-4 h-auto text-xs tracking-widest uppercase transition-all duration-300">
+              <Link href="/collection">
                 View All Products
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -476,7 +477,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* About Section */}
             <div>
-              <h3 className="text-2xl font-serif italic mb-4 text-pink-400">Slsel</h3>
+              <Image
+                src="/sa-removebg-preview.png"
+                alt="Salsel Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto mb-4"
+              />
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 Your destination for premium accessories. We curate timeless pieces that define your unique style.
               </p>

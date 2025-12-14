@@ -70,14 +70,15 @@ export default function CartPage() {
                                 HOME
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <Link href="/#about" className="hover:text-pink-500 transition-colors duration-300 relative group">
-                                ABOUT
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
                             <Link href="/collection" className="hover:text-pink-500 transition-colors duration-300 relative group">
                                 COLLECTION
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
+                            <Link href="/#about" className="hover:text-pink-500 transition-colors duration-300 relative group">
+                                ABOUT
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
+
                             <Link href="/#contact" className="hover:text-pink-500 transition-colors duration-300 relative group">
                                 CONTACT US
                                 <span className="absolute -bottom-1 left-0 w-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
@@ -135,11 +136,11 @@ export default function CartPage() {
                             <ShoppingBag className="w-24 h-24 mx-auto text-gray-300 mb-6" />
                             <h2 className="text-3xl font-light text-gray-800 mb-4">Your cart is empty</h2>
                             <p className="text-gray-600 mb-8">Add some beautiful jewelry to your cart!</p>
-                            <Link href="/collection">
-                                <Button className="bg-black text-white hover:bg-pink-600 rounded-none px-12 py-6 h-auto text-sm tracking-widest uppercase transition-all duration-300">
+                            <Button asChild className="bg-black text-white hover:bg-pink-600 rounded-none px-12 py-6 h-auto text-sm tracking-widest uppercase transition-all duration-300">
+                                <Link href="/collection">
                                     Shop Collection
-                                </Button>
-                            </Link>
+                                </Link>
+                            </Button>
                         </div>
                     ) : (
                         // Cart Items
