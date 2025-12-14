@@ -200,42 +200,42 @@ const products = [
         id: 27,
         name: "Rose Gold Minimalist Watch",
         price: "E.G 189.99",
-        image: "/Wathces/Gemini_Generated_Image_543ka2543ka2543k.png",
+        image: "/Wathces/Gemini_Generated_Image_543ka2543ka2543k.webp",
         category: "Watches"
     },
     {
         id: 28,
         name: "Silver Mesh Strap Watch",
         price: "E.G 159.99",
-        image: "/Wathces/Gemini_Generated_Image_9g9jpm9g9jpm9g9j.png",
+        image: "/Wathces/Gemini_Generated_Image_9g9jpm9g9jpm9g9j.webp",
         category: "Watches"
     },
     {
         id: 29,
         name: "Classic Leather Strap Watch",
         price: "E.G 129.99",
-        image: "/Wathces/Gemini_Generated_Image_hvuun7hvuun7hvuu.png",
+        image: "/Wathces/Gemini_Generated_Image_hvuun7hvuun7hvuu.webp",
         category: "Watches"
     },
     {
         id: 30,
         name: "Modern Black Dial Watch",
         price: "E.G 199.99",
-        image: "/Wathces/Gemini_Generated_Image_nrz7jgnrz7jgnrz7.png",
+        image: "/Wathces/Gemini_Generated_Image_nrz7jgnrz7jgnrz7.webp",
         category: "Watches"
     },
     {
         id: 31,
         name: "Luxury Diamond Bezel Watch",
         price: "E.G 299.99",
-        image: "/Wathces/Gemini_Generated_Image_qfwq74qfwq74qfwq.png",
+        image: "/Wathces/Gemini_Generated_Image_qfwq74qfwq74qfwq.webp",
         category: "Watches"
     },
     {
         id: 32,
         name: "Elegant Two-Tone Watch",
         price: "E.G 249.99",
-        image: "/Wathces/Gemini_Generated_Image_vovb0vovb0vovb0v.png",
+        image: "/Wathces/Gemini_Generated_Image_vovb0vovb0vovb0v.webp",
         category: "Watches"
     }
 
