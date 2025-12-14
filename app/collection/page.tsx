@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ShoppingBag, Menu, Filter, ChevronDown } from "lucide-react"
+import { ShoppingBag, Menu, Filter, ChevronDown, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect, Suspense } from "react"
 import { useCart } from "@/contexts/cart-context"
@@ -251,6 +251,7 @@ function CollectionContent() {
     const { cartCount, addToCart } = useCart()
 
     const [addedItems, setAddedItems] = useState<Record<number, boolean>>({})
+    const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null)
 
     // Set initial category from URL parameter
     useEffect(() => {
@@ -431,17 +432,18 @@ function CollectionContent() {
                             >
                                 <div className="bg-white rounded-lg overflow-hidden flex-grow flex flex-col">
                                     {/* Product Image */}
-                                    <Link href="#" className="block cursor-pointer">
-                                        <div className="relative aspect-square overflow-hidden bg-gray-50 rounded-lg mb-4">
-                                            <Image
-                                                src={product.image}
-                                                alt={product.name}
-                                                fill
-                                                className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                            />
-                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
-                                        </div>
-                                    </Link>
+                                    <div
+                                        onClick={() => setSelectedProduct(product)}
+                                        className="block cursor-pointer relative aspect-square overflow-hidden bg-gray-50 rounded-lg mb-4"
+                                    >
+                                        <Image
+                                            src={product.image}
+                                            alt={product.name}
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                        />
+                                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
+                                    </div>
 
                                     {/* Product Info */}
                                     <div className="flex flex-col flex-grow text-center px-2">
@@ -595,7 +597,31 @@ function CollectionContent() {
                     </div>
                 </div>
             </footer >
-        </div>
+
+            {/* Product Modal */}
+            {selectedProduct && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm" onClick={() => setSelectedProduct(null)}>
+                    <div
+                        className="relative w-full max-w-3xl aspect-square md:aspect-[4/3] rounded-lg overflow-hidden flex items-center justify-center animate-in fade-in zoom-in duration-300"
+                        onClick={e => e.stopPropagation()}
+                    >
+                        <Image
+                            src={selectedProduct.image}
+                            alt={selectedProduct.name}
+                            fill
+                            className="object-contain"
+                        />
+                        <button
+                            onClick={() => setSelectedProduct(null)}
+                            className="absolute top-4 right-4 p-2 bg-black/20 hover:bg-black/40 backdrop-blur-md rounded-full transition-colors z-10 text-white border border-white/20"
+                        >
+                            <X className="w-6 h-6" />
+                        </button>
+                    </div>
+                </div>
+            )}
+
+        </div >
     )
 }
 
